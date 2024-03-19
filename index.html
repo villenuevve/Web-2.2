@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-image: url('rainbow.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .flex-container {
+    display: flex;
+    background-color: rgb(11, 6, 69);   
+    }
+
+    div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    }
+
+    .flex-container > div {
+    background-color: #69afff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    }
+
+    p.a {
+        font: 20px Arial, sans-serif;
+    }
+
+    p.b {
+        font: italic bold 12px/30px Georgia, serif;
+    }
+
+    p.ex1 {
+        border: 2px solid rgb(255, 120, 2);
+        outline-style: solid;
+        outline-color: #ffbf00;
+    }
+
+    p.ex2 {
+        border: 1px solid rgb(255, 162, 63);
+        outline-style: solid;
+        outline-color: rgb(255, 252, 157);
+        outline-width: thick;
+    }
+
+    p.ex3 {
+        outline: thick ridge pink;
+    }
+
+    p.ex4 {
+        margin: 30px;
+        border: 1px solid rgb(173, 14, 115);
+        outline: 1px solid rgb(79, 5, 139);
+        outline-offset: 15px;
+    }
+
+    p.ex5 {
+    direction: rtl;
+    unicode-bidi: bidi-override;}
+
+    p.capitalize {
+    text-transform: capitalize;
+    }
+
+    p.small {
+    font-variant: small-caps;
+    }
+
+    p.ex6 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    }
+
+    h1.ex1 {
+        background-color: rgb(255, 62, 120);
+        color: white;
+    }
+
+    h1.ex2 {
+    text-shadow: 1px 2px;
+    }
+
+    div.ex1 {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(28, 220, 226);
+    border: 1px solid black;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+
+    div.ex2 {
+    background-color: rgb(16, 126, 133);
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+    body {
+    background-color: white;
+    }
+
+    .header, .footer {
+    background-color: rgb(15, 61, 113);
+    color: white;
+    padding: 15px;
+    }
+
+    .column {
+    float: left;
+    padding: 15px;
+    }
+
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .menu {
+    width: 25%;
+    }
+
+    .content {
+    width: 75%;
+    }
+
+    .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #e57733;
+    color: #ffffff;
+    }
+
+    .menu li:hover {
+    background-color: #3dacd1;
+    }
+
+    a.ex1 {
+    text-decoration: none;
+    }
+
+    img.ex1 {
+    -webkit-box-reflect: right;
+    }
+
+    .div2 {
+    width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    }
+
+    .div3 {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(25, 182, 243);
+    border: 1px solid black;
+    transform: rotateZ(90deg);
+    }   
+
+    div.gallery {
+    border: 1px solid #e88888;
+    }
+
+    div.gallery:hover {
+    border: 1px solid #62acec;
+    }
+
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+    .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 200px) {
+    .responsive {
+    width: 40%;
+    margin: 6px 0;
+    }
+}
+
+    @media only screen and (max-width: 200px) {
+    .responsive {
+    width: 50%;
+    }
+}
+
+    .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Самостійна робота 2.2</h1>
+</div>
+
+<div class="clearfix">
+<div class="column menu">
+    <ul>
+    <li>Лютий</li>
+    <li>Березень</li>
+    <li>Квітень</li>
+    <li>Травень</li>
+    </ul>
+</div>
+
+<div class="column content">
+    <h1>з предмету WEB – орієнтовані технології.</h1>
+    <p> Основи Frontend та Backend розробок.</p>
+</div>
+</div>
+
+<div class="footer">
+<p>Footer Text</p>
+</div>
+
+<p class="b">Давай виключим світло і будем мовчати
+    Про то, шо не можна словами сказати,
+    Не можна писати, неможливо зіграти,
+    А тільки мовчати, тихенько мовчати.</p>
+
+<div class="sticky">Липучка пучка</div>
+<p class="ex1">Місяць впав, темно в кімнаті.
+    Як добре, що ти навчилась мовчати,</p>
+<p class="ex2">Про то, шо ніколи не змогла би збрехати.
+    Про то, шо ніколи мені не спитатись.</p>
+<p class="ex3">Як світло проб’ється через наші штори,
+    Ми знову з тобою, як всі заговорим.</p>
+<p class="ex4">Зашипіли двері, станція "Хрещатик" –
+    І народ почав з вагона як картопля випадати</p>
+<h1 class="ex1">Кілька спальних районів, посередині Дніпро,
+    Київ - місто невелике, ми зустрінемось в метро.</h1>
+
+<p>Ссылка без подчеркивания: <a class="ex1" href="https://pisni.ua/skriabin-hovoryly-i-kuryly">Пісні Скрябіна</a></p>
+<p class="ex5">І зранку знову ниряю у підземні тунелі,
+    І несе мене до тебе ця криклива канітєль.</p>
+<p class="capitalize">І бачу ті самі джінси і той рюкзачок,
+    І від радості зжимаю у кишені кулачок.</p>
+<p class="ex6">Ще чоловік п’ятдесять у вагон забігає –
+    Мене розмазує по тобі, ніби маслом коровай.</p>
+<p class="small">І я чекаю в душі на зупинку "Хрещатик",
+    Щоби вибратись наверх і навіть пози не міняти.</p>
+<h1 class="ex2">Все шо було лишилось позаду.</h1><br></br><br></br>
+<div class="ex1">
+    Падай, падай, ніколи не згадуй,
+    То шо було далеко позаду.
+</div><br></br><br></br>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>  
+        <div>5</div>  
+        <div>6</div> 
+        <div>7</div>  
+        <div>8</div>  
+        <div>9</div> 
+        <div>10</div> 
+    </div>
+    <br></br><br></br><br></br><br></br>
+    <div class="div3"> Любов як ніч, яка тебе заблудить,
+        Назад вернутись зовсім не спішиш.</div></div><br></br><br></br><br></br>
+
+    <img class="ex1" src="butterfly.png">
+    <div class="ex2">Він ціле життя усміхався
+        Широко до всіх навкруги.
+        Позичав їм останні гроші,
+        А сам не просив взайми.
+        А вони садили дерева зла
+        На бідній його голові.
+        І з часом горбилася спина
+        Під вагою дрімучих садів.</div>
+
+    <div style="padding-bottom:2000px"><br></br>
+    <div class="div2">Hooray!</div><br></br>
+    <form action="https://www.w3schools.com/action_page.php">
+        <input type="number" name="points" step="3">
+        <input type="submit">
+    </form>
+
+    <br></br>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="one.jpg">
+            <img src="one.jpg" width="600" height="400">
+            </a>
+        <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="two.jpg">
+            <img src="two.jpg" width="600" height="400">
+            </a>
+        <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="five.jpg">
+            <img src="five.jpg" width="600" height="400">
+            </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="six.jpg">
+                <img src="six.jpg" alt="Mountains" width="600" height="400">
+                </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+        <div style="padding:6px;">
+    </div>
+
+</body>
+</html>
